@@ -1,0 +1,52 @@
+.main-nav ul {
+  display: none;
+  list-style: none;
+}
+
+.fixed-header {
+  width: 100%
+}
+
+.float-left {
+  float:left;
+  width: 50%
+}
+
+.float-right {
+  float:right;
+  width: 50%;
+}
+
+.main-nav ul li {
+  display: inline-block;
+  padding-top: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+#icon-menu {
+  float: right;
+  display: block;
+  font-size: 7vw;
+}
+
+#articles {
+  margin-top: 0vh;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 640px){
+  #icon-menu {
+    display: none;
+    padding: 1em;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav:hover ul {
+    display: flex;
+  }
+
+}
