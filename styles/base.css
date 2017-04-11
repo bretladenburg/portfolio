@@ -3,10 +3,10 @@ img {
 }
 
 header {
-  /*position: fixed;*/
+  position: fixed;
   width: 100%;
   background-color: #efefef;
-  /*z-index: 10;*/
+  z-index: 10;
 
 }
 
@@ -16,7 +16,7 @@ footer {
 
 h1 {
   font-family: 'Poiret One', cursive;
-
+  padding-left: 3em;
 }
 
 p {
