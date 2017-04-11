@@ -1,0 +1,5 @@
+.main-nav ul {
+  float: right;
+  display: inline;
+  clear:both;
+}
