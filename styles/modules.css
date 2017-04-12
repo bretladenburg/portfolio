@@ -4,8 +4,10 @@
 }
 
 .fixed-header {
-  width: 100%
-  margin: 5px;
+  /*position: fixed;*/
+  width: 100%;
+  background-color: #efefef;
+  /*z-index: 10;*/
 }
 
 .float-left {
@@ -43,13 +45,17 @@
 }
 
 #carousel {
-  margin-top: 0vh;
+  /*margin-top: 0vh;
   overflow: hidden;
-  top: 5vh;
+  top: 5vh;*/
 }
 
 #articles {
+  text-align: center;
+}
 
+.clearfix {
+  clear: both;
 }
 
 

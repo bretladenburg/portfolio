@@ -19,7 +19,6 @@ Article.prototype.toHtml = function() {
   $newArticle.find('h2').html(this.title);
   $newArticle.find('address').html(this.authors);
   $newArticle.find('a').attr('href', this.projectUrl);
-  console.log(this.projectUrl);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
   $newArticle.append('<hr>');

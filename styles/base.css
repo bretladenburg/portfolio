@@ -1,12 +1,12 @@
+* {
+  font-family: 'Poiret One', cursive;
+}
+
 img {
   width: 100%;
 }
 
-.fixed-header {
-  /*position: fixed;*/
-  width: 100%;
-  background-color: #efefef;
-  /*z-index: 10;*/
+header {
 
 }
 
@@ -19,6 +19,9 @@ h1 {
   padding-left: 3em;
 }
 
+h2 {
+
+}
 p {
 
 }
