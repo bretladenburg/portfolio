@@ -4,7 +4,10 @@
 }
 
 .fixed-header {
-  width: 100%
+  /*position: fixed;*/
+  width: 100%;
+  background-color: #efefef;
+  /*z-index: 10;*/
 }
 
 .float-left {
@@ -23,16 +26,39 @@
   border-bottom: 1px solid #ccc;
 }
 
+.template {
+  display: none;
+}
+
+.byline {
+
+}
+
+.article-body {
+
+}
+
 #icon-menu {
   float: right;
   display: block;
   font-size: 7vw;
 }
 
-#articles {
-  margin-top: 0vh;
+#carousel {
+  /*margin-top: 0vh;
   overflow: hidden;
+  top: 5vh;*/
 }
+
+#articles {
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
 
 @media only screen and (min-width: 640px){
   #icon-menu {
