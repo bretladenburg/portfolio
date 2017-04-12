@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/3b85e285cd.js"></script>
   </head>
   <body>
@@ -29,12 +30,22 @@
         </div>
       </section>
     </header>
-  <section id='articles' class='tab-content'>
+  <section id='carousel' class='tab-content'>
     <!-- handlebar slide -->
   </section>
-  <section>
+  <section id='articles'>
     <!-- projects -->
-  </p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <article class="template" data-category="">
+         <header>
+           <h2>Title</h2>
+           <div class="byline">
+             By <address><a href="">Author Name</a></address>
+             published <time pubdate datetime="2000-01-01">Publish Time</time>
+             <div class='gitHubUrl'></div>
+           </div>
+         </header>
+         <section class="article-body"></section>
+       </article>
   </section>
   <section>
     <!-- qualifications -->
@@ -51,5 +62,7 @@
         <li><a href="http://github.com/bret.ladenburg" target="_blank" class="icon-github"> GitHub</a></li>
       </ul>
     </footer>
+    <script type="text/javascript" src='scripts/data.js'></script>
+    <script type="text/javascript" src='scripts/app.js'></script>
   </body>
 </html>
