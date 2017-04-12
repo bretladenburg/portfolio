@@ -2,7 +2,7 @@ img {
   width: 100%;
 }
 
-header {
+.fixed-header {
   position: fixed;
   width: 100%;
   background-color: #efefef;
