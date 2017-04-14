@@ -19,7 +19,7 @@ articleView.handleMainNav = function() {
     $('.tab-content').hide();
     $('#' + $(this).attr('data-content')).fadeIn();
   });
-  $('.main-nav .tab:first').click();
+  // $('.main-nav .tab:first').click();
 };
 
 $(document).ready(function() {

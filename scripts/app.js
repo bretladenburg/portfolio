@@ -30,5 +30,5 @@ $('#icon-menu').click(function() {
 })
 
 $('.float-left').click(function() {
-  location.reload();
+  location.reload()
 })
