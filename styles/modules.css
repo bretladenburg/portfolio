@@ -12,7 +12,8 @@
 
 .float-left {
   float:left;
-  width: 50%
+  width: 50%;
+  cursor: pointer;
 }
 
 .float-right {
@@ -44,19 +45,28 @@
   font-size: 7vw;
 }
 
+#icon-menu:hover {
+
+}
+
 #carousel {
   position:relative;
   margin-top: 0vh;
   overflow: hidden;
-  
+
 }
 
-#articles {
+#projects {
   text-align: center;
 }
 
 .clearfix {
   clear: both;
+}
+
+#mobile-nav {
+  display: none;
+
 }
 
 
@@ -75,5 +85,6 @@
   .main-nav:hover ul {
     display: flex;
   }
+
 
 }
