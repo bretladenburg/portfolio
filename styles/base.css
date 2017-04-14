@@ -3,7 +3,7 @@
 }
 
 img {
-  width: 100%;
+  /*width: 100%;*/
 }
 
 header {
@@ -24,4 +24,8 @@ h2 {
 }
 p {
 
+}
+
+main {
+  padding-top: 12vh;
 }

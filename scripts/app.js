@@ -24,3 +24,11 @@ Article.prototype.toHtml = function() {
   $newArticle.append('<hr>');
   return $newArticle;
 };
+
+$('#icon-menu').click(function() {
+  $('#mobile-nav').toggle();
+})
+
+$('.float-left').click(function() {
+  location.reload()
+})
