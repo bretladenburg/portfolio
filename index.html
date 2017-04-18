@@ -10,7 +10,24 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://use.fontawesome.com/3b85e285cd.js"></script>
+  <script type="text/x-handlebars-template" id="template">
+    <section id='projects' class='tab-content'>
+      <!-- projects -->
+      <article class="template" data-category="">
+        <header>
+          <h2 class='clearfix'>{{Title}}</h2>
+          <div class="byline">
+            By: <address><a href="">{{Author Name}}</a></address>
+            published <time pubdate datetime="2000-01-01">{{Publish Time}}</time>
+            <a href="" class='projectUrl'>{{Project Url}}</a>
+          </div>
+        </header>
+        <section class="article-body"></section>
+      </article>
+    </section>
+  </script>
 </head>
 <body>
   <div id='mobile-nav'>
@@ -70,7 +87,5 @@
   <script type="text/javascript" src='scripts/data.js'></script>
   <script type="text/javascript" src='scripts/app.js'></script>
   <script type="text/javascript" src='scripts/view.js'></script>
-
-</script>
 </body>
 </html>
