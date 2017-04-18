@@ -10,9 +10,6 @@ rawData.forEach(function(articleObject) {
   articles.push(new Article(articleObject));
 });
 
-articles.forEach(function(article) {
-  $('#projects').append(article.toHtml());
-})
 
 articleView.handleMainNav = function() {
   $('.main-nav .tab').on('click', function(){
@@ -24,4 +21,8 @@ articleView.handleMainNav = function() {
 
 $(document).ready(function() {
   articleView.handleMainNav();
+})
+
+articles.forEach(function(article) {
+  $('#projects').append(article.toHtml());
 })

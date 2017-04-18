@@ -10,7 +10,21 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://use.fontawesome.com/3b85e285cd.js"></script>
+  <script type="text/x-handlebars-template" id="template">
+      <article>
+        <header>
+          <h2 class='clearfix'>{{title}}</h2>
+          <div class="byline">
+            By: <address><a href="">{{authors}}</a></address>
+            published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+            <a href="" class='projectUrl'>{{projectUrl}}</a>
+          </div>
+        </header>
+        <section class="article-body">{{body}}</section>
+      </article>
+  </script>
 </head>
 <body>
   <div id='mobile-nav'>
@@ -37,20 +51,7 @@
       <!-- carousel goes here -->
       <img src='https:placehold.it/200x200'>
     </section>
-    <section id='projects' class='tab-content'>
-      <!-- projects -->
-      <article class="template" data-category="">
-        <header>
-          <h2 class='clearfix'>Title</h2>
-          <div class="byline">
-            By: <address><a href="">Author Name</a></address>
-            published <time pubdate datetime="2000-01-01">Publish Time</time>
-            <a href="" class='projectUrl'>Project Url</a>
-          </div>
-        </header>
-        <section class="article-body"></section>
-      </article>
-    </section>
+    <section id='projects' class='tab-content'></section>
     <section id='qualifications' class='tab-content'>
       <!-- qualifications -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -70,7 +71,5 @@
   <script type="text/javascript" src='scripts/data.js'></script>
   <script type="text/javascript" src='scripts/app.js'></script>
   <script type="text/javascript" src='scripts/view.js'></script>
-
-</script>
 </body>
 </html>

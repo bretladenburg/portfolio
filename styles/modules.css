@@ -45,10 +45,6 @@
   font-size: 7vw;
 }
 
-#icon-menu:hover {
-
-}
-
 #carousel {
   position:relative;
   margin-top: 0vh;
@@ -58,6 +54,7 @@
 
 #projects {
   text-align: center;
+
 }
 
 .clearfix {
