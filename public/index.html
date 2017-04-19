@@ -27,8 +27,7 @@
   </script>
 </head>
 <body>
-  <div id='mobile-nav'>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  <div id='mobile-nav' class='clearfix'></div>
   <header class='fixed-header'>
     <section>
       <div class='float-left'>
@@ -68,8 +67,9 @@
       <li><a href="http://github.com/bret.ladenburg" target="_blank" class="icon-github"> GitHub</a></li>
     </ul>
   </footer>
-  <script type="text/javascript" src='scripts/data.js'></script>
+  <script src="data/data.json"></script>
   <script type="text/javascript" src='scripts/app.js'></script>
   <script type="text/javascript" src='scripts/view.js'></script>
+  <script>Article.fetchAll();</script>
 </body>
 </html>
