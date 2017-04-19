@@ -21,6 +21,10 @@ articleView.handleMainNav = function() {
 
 $(document).ready(function() {
   articleView.handleMainNav();
+  $('#icon-menu').on('click', function() {
+    $('.main-nav ul').toggle();
+    console.log('clicked');
+  })
 })
 
 articles.forEach(function(article) {
