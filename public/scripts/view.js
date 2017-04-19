@@ -27,6 +27,10 @@ $(document).ready(function() {
   })
 })
 
-articles.forEach(function(article) {
-  $('#projects').append(article.toHtml());
-})
+articleView.initIndexPage = function() {
+  articles.forEach(function(article) {
+    $('#projects').append(article.toHtml());
+  })
+
+  articleView.handleMainNav();
+}
