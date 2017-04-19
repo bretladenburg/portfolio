@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bretladenburg/portfolio/issues"
   },
-  "homepage": "https://github.com/bretladenburg/portfolio#readme"
+  "homepage": "https://github.com/bretladenburg/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }

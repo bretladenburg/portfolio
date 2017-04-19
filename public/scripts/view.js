@@ -2,15 +2,6 @@
 
 var articleView = {};
 
-rawData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
-
-rawData.forEach(function(articleObject) {
-  articles.push(new Article(articleObject));
-});
-
-
 articleView.handleMainNav = function() {
   $('.main-nav .tab').on('click', function(){
     $('.tab-content').hide();
@@ -23,12 +14,11 @@ $(document).ready(function() {
   articleView.handleMainNav();
   $('#icon-menu').on('click', function() {
     $('.main-nav ul').toggle();
-    console.log('clicked');
   })
 })
 
 articleView.initIndexPage = function() {
-  articles.forEach(function(article) {
+  Article.all.forEach(function(article) {
     $('#projects').append(article.toHtml());
   })
 

@@ -1,6 +1,4 @@
-'use strict';
-
-var rawData = [
+[
   {
     "title":       "Four In A Row",
     "category":    "game",
