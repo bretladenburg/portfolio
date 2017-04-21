@@ -7,7 +7,7 @@
 .fixed-header {
   position: fixed;
   width: 100%;
-  background-color: #efefef;
+  background-color: #F5811F;
   z-index: 10;
 }
 
@@ -56,6 +56,10 @@
 #projects {
   text-align: center;
 
+}
+
+#footer-links {
+  background-color: #F5811F;
 }
 
 .clearfix {

@@ -1,9 +1,14 @@
 * {
   font-family: 'Poiret One', cursive;
+  color: white;
 }
 
 img {
   /*width: 100%;*/
+}
+
+body {
+
 }
 
 header {
@@ -11,7 +16,7 @@ header {
 }
 
 footer {
-
+  background-color: #F5811F;
 }
 
 h1 {
@@ -28,4 +33,5 @@ p {
 
 main {
   padding-top: 12vh;
+  background-color: #008D97;
 }
