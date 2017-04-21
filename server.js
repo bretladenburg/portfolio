@@ -15,7 +15,6 @@ app.get('/', function (request, response){
 });
 
 app.post('/articles', bodyParser, function(request, response) {
-
   console.log(request.body);
   response.send('Record posted to server!!');
 })
