@@ -18,7 +18,7 @@ $(document).ready(function() {
 })
 
 articleView.initIndexPage = function() {
-  Article.all.forEach(function(article) {
+  Article.all.map(article => {
     $('#projects').append(article.toHtml());
   })
 
