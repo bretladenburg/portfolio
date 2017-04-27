@@ -14,6 +14,7 @@ app.get('/', function (request, response){
   response.sendFile('public/index.html'), {root: '.'};
 });
 
+
 app.post('/articles', bodyParser, function(request, response) {
   console.log(request.body);
   response.send('Record posted to server!!');
