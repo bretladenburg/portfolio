@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
   <script src="https://use.fontawesome.com/3b85e285cd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.7.1/page.min.js"></script>
   <script type="text/x-handlebars-template" id="template">
       <article>
         <header>
@@ -31,15 +32,16 @@
   <header class='fixed-header'>
     <section>
       <div class='float-left'>
-        <h1>Bret Ladenburg</h1>
+        <h1 href='/'>Bret Ladenburg</h1>
       </div>
       <div class='float-right'>
         <nav class='main-nav'>
           <i class="fa fa-bars" id='icon-menu' aria-hidden="true"></i>
           <ul>
-            <li class='tab' data-content='projects'><a href='#' class='icon-home'>Projects</a></li>
-            <li class='tab' data-content='qualifications'><a href='#' class='icon-qual'>Qualifications</a></li>
-            <li class='tab' data-content='about'><a href='#' class='icon-address-book'>About</a></li>
+            <li class='tab'><a href='/' class='icon-home'>Home</a></li>
+            <li class='tab' data-content='projects'><a href='/projects' class='icon-home'>Projects</a></li>
+            <li class='tab' data-content='qualifications'><a href='/qualifications' class='icon-qual'>Qualifications</a></li>
+            <li class='tab' data-content='about'><a href='/about' class='icon-address-book'>About</a></li>
           </ul>
         </nav>
       </div>
@@ -67,9 +69,13 @@
     </ul>
   </footer>
   <script src="data/data.json"></script>
-  <script type="text/javascript" src='scripts/app.js'></script>
-  <script type="text/javascript" src='scripts/view.js'></script>
-  <script type="text/javascript" src='scripts/controller.js'></script>
-  <script>Article.fetchAll(articleView.initIndexPage);</script>
+  <script type="text/javascript" src='scripts/view/view.js'></script>
+  <script type="text/javascript" src='scripts/model/app.js'></script>
+  <script type="text/javascript" src='scripts/controllers/aboutController.js'></script>
+  <script type="text/javascript" src='scripts/controllers/projectController.js'></script>
+  <script type="text/javascript" src='scripts/controllers/qualificationsController.js'></script>
+  <script type="text/javascript" src='scripts/controllers/homeController.js'></script>
+  <script type="text/javascript" src='scripts/controllers/routes.js'></script>
+  <!-- <script>Article.fetchAll(articleView.initIndexPage);</script> -->
 </body>
 </html>
